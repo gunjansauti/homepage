@@ -112,6 +112,11 @@ a:hover, a:active {
     width: 100%;height: 100%;
     overflow: hidden;
     z-index: 10;
+	transition: transform .2s; /* Animation */
+}
+.img-place:hover {
+  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 9999;
 }
 
 .img-place > img {
